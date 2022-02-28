@@ -12,8 +12,8 @@ public class CartPage {
 	WebDriver driver;
 	 @BeforeTest
 	    public void beforetest() {
-	        System.setProperty("webdriver.edge.driver","C:\\EdgeDriver\\edgedriver_win64\\msedgedriver.exe");
-	          driver = new EdgeDriver();
+	        System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+	          driver = new ChromeDriver();
 	          driver.get("https://www.demoblaze.com/index.html");
 	          driver.manage().window().maximize();
 	    }

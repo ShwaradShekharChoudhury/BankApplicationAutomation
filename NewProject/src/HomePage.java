@@ -12,8 +12,8 @@ public static String lapString;
 public static String moniString;
 		 @BeforeTest
 		    public void beforetest() {
-		        System.setProperty("webdriver.chrome.driver","C:\\ChromeDriver\\chromedriver.exe");
-		          driver = new ChromeDriver();
+		        System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+	          driver = new ChromeDriver();
 		          driver.get("https://www.demoblaze.com/index.html");
 		          driver.manage().window().maximize();
 		    }

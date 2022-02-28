@@ -12,8 +12,8 @@ public class ContactPage {
 	WebDriver driver;
 	 @BeforeTest
 	    public void beforetest() {
-		 System.setProperty("webdriver.chrome.driver","C:\\ChromeDriver\\chromedriver.exe");
-         driver = new ChromeDriver();
+		 System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+	          driver = new ChromeDriver();
          driver.get("https://www.demoblaze.com/index.html");}
 	 @Test
      public void testmethod1() throws InterruptedException
